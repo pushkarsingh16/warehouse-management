@@ -1,0 +1,1 @@
+{"name":"warehouse-os","private":true,"type":"module","workspaces":["apps/*"],"scripts":{"test":"npm test --workspace @warehouse/server","start":"npm start --workspace @warehouse/server"},"engines":{"node":">=22"}}

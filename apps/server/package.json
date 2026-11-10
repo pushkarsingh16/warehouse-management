@@ -1,0 +1,30 @@
+{
+  "name": "@warehouse/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/api.js",
+    "seed": "node src/seed.js",
+    "outbox": "node src/outbox.js",
+    "test": "node --test test/*.test.js",
+    "workers": "node src/workers.js",
+    "simulator": "node src/simulator.js",
+    "replay": "node src/replay.js",
+    "demo": "node src/demo.js",
+    "forecast-worker": "node src/forecast-worker.js",
+    "verify:ml": "node src/verify-ml.js",
+    "ml:migrate": "node src/ml-migrate.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.4",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.19.0",
+    "pino": "^10.4.0",
+    "socket.io": "^4.8.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}

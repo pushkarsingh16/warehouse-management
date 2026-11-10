@@ -1,0 +1,13 @@
+node_modules
+.env
+.git
+
+**/dist
+**/test-results
+**/playwright-report
+
+.env*
+**/.env*
+*.env
+*.env.*
+.git

@@ -1,0 +1,22 @@
+node_modules/
+.env
+coverage/
+
+.venv/
+__pycache__/
+*.pyc
+models/
+
+apps/web/dist/
+apps/web/test-results/
+apps/web/playwright-report/
+
+# Never publish local environment files or credentials
+.env*
+**/.env*
+*.env
+*.env.*
+.envrc
+.DS_Store
+*.pem
+*.key

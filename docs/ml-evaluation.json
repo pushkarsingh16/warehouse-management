@@ -1,0 +1,80 @@
+{
+  "modelVersion": "demand-v1-f3eb16c52de9-e100",
+  "featureSchema": "past-demand-v1",
+  "features": [
+    "lag1",
+    "lag7",
+    "lag14",
+    "mean7",
+    "mean14",
+    "std14",
+    "weekday_sin",
+    "weekday_cos"
+  ],
+  "horizonDays": 7,
+  "mean": [
+    12.615405082702637,
+    12.622882843017578,
+    12.58621597290039,
+    12.602071762084961,
+    12.575398445129395,
+    6.074647903442383,
+    0.009495997801423073,
+    0.0075724185444414616
+  ],
+  "std": [
+    15.205395698547363,
+    15.193214416503906,
+    15.114571571350098,
+    12.635624885559082,
+    12.429850578308105,
+    6.07291316986084,
+    0.7072827816009521,
+    0.7068362832069397
+  ],
+  "selectedMethod": "pytorch",
+  "selectionMetric": "validation.mae",
+  "trainingCutoff": "2024-08-06",
+  "validationCutoff": "2024-10-18",
+  "datasetSha256": "f3eb16c52de950c9e672f7e62d3428e8c8f7745f4a5cec3f8d307b99ed0fd80f",
+  "synthetic": true,
+  "seed": 42,
+  "epochs": 100,
+  "evaluation": {
+    "validation": {
+      "pytorch": {
+        "mae": 3.9253015518188477,
+        "wape": 0.28790441155433655,
+        "zeroActualTotal": false
+      },
+      "moving_average": {
+        "mae": 5.514651298522949,
+        "wape": 0.4044765532016754,
+        "zeroActualTotal": false
+      },
+      "same_weekday": {
+        "mae": 5.240156173706055,
+        "wape": 0.3843435049057007,
+        "zeroActualTotal": false
+      }
+    },
+    "test": {
+      "pytorch": {
+        "mae": 3.9617836475372314,
+        "wape": 0.2841269373893738,
+        "zeroActualTotal": false
+      },
+      "moving_average": {
+        "mae": 5.538846492767334,
+        "wape": 0.39722904562950134,
+        "zeroActualTotal": false
+      },
+      "same_weekday": {
+        "mae": 5.076545715332031,
+        "wape": 0.3640742599964142,
+        "zeroActualTotal": false
+      }
+    }
+  },
+  "limitation": "Synthetic benchmark only; no real-world accuracy claim."
+}
